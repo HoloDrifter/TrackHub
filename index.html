@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackHub</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/images/logo-abstract.png"
+      type="image/x-icon"
+    />
+    <!-- remixicon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ------------ HEADER ----------- -->
+    <header>
+      <!-- HTML -->
+      <div class="navbar">
+        <div class="container">
+          <div class="nav_container flex">
+            <div class="logo flex">
+              <img src="images/logo-abstract.png" alt="TrackHub logo" />
+              <span>TrackHub</span>
+            </div>
+            <div class="nav_links flex">
+              <ul class="nav_list flex">
+                <!-- <li><a href="#" data-scroll>Home</a></li> -->
+                <li><a href="#partners_section" data-scroll>Partners</a></li>
+                <li><a href="#about_section" data-scroll>About Us</a></li>
+                <li><a href="#process_section" data-scroll>Our Process</a></li>
+                <li><a href="#faqs_section" data-scroll>FAQS</a></li>
+                <li><a href="#contact_section" data-scroll>Contact Us</a></li>
+              </ul>
+              <a href="#" data-scroll
+                ><button class="btn btn-red">Track Your Order</button></a
+              >
+            </div>
+          </div>
+
+          <div class="hamburger-menu">
+            <i class="ri-menu-fill" id="menu-icon"></i>
+            <div class="logo flex">
+              <img src="images/logo-abstract.png" alt="TrackHub logo" />
+              <span>TrackHub</span>
+            </div>
+            <a href="#"><button class="btn btn-red">Track Order</button></a>
+          </div>
+          <!-- Submenu -->
+          <div class="submenu">
+            <ul class="nav_list flex">
+              <!-- <li><a href="#" data-scroll>Home</a></li> -->
+              <li><a href="#partners_section" data-scroll>Partners</a></li>
+              <li><a href="#about_section" data-scroll>About Us</a></li>
+              <li><a href="#process_section" data-scroll>Our Process</a></li>
+              <li><a href="#faqs_section" data-scroll>FAQS</a></li>
+              <li><a href="#contact_section" data-scroll>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="container flex">
+          <div class="hero_content flex-c flex-col">
+            <h1>
+              Seamless Shipping Solutions for <span>Growing E-Commerce</span>
+            </h1>
+            <p>
+              Reliable shipping solutions for e-commerce stores. We handle your
+              logistics with trusted carriers, ensuring fast delivery and
+              real-time tracking for your customers.
+            </p>
+            <a href="#contact_section" data-scroll
+              ><button class="btn btn-red btn-long">Get Started</button></a
+            >
+          </div>
+          <div class="hero_track">
+            <div class="track_container">
+              <div class="track-head">
+                <div class="track_icon">
+                  <i class="ri-truck-line"></i>
+                </div>
+                <h4>Track your Order</h4>
+                <p>Enter your Tracking number to track your order.</p>
+              </div>
+              <div class="track-body flex flex-col">
+                <form>
+                  <label for="tracking_no">Enter Tracking number</label>
+                  <input
+                    type="text"
+                    id="tracking_no"
+                    name="tracking_number"
+                    placeholder="1Z9999W99999999999"
+                  />
+                </form>
+                <button class="btn btn-black">Track Order</button>
+              </div>
+              <p class="track-small-des">
+                Track yours orders live on our website.
+              </p>
+              <div class="track-img">
+                <img src="images/truck-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------ END HEADER ----------- -->
+
+    <!-- ------------  PARTNERS ----------- -->
+    <section class="partners" id="partners_section">
+      <div class="container flex-c flex-col">
+        <p>Collaborating with industry leaders to ensure seamless delivery.</p>
+        <div class="partners_logos flex-c">
+          <div class="partner-logo">
+            <img src="images/com-1.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-2.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-3.png" alt="" />
+          </div>
+          <div class="partner-logo partner-logo-extrasmall">
+            <img src="images/com-4.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-5.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-6.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-7.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-8.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-9.png" alt="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/com-10.png" alt="" />
+          </div>
+          <div class="partner-logo partner-logo-small">
+            <img src="images/com-11.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END PARTNERS ----------- -->
+
+    <!-- ------------ About us ----------- -->
+    <section class="about-section">
+      <div class="container flex">
+        <div class="about_content">
+          <p class="tagline">Simplifying Shipping for E-Commerce</p>
+          <h2>Powering Your Shipments, Fueling Your Growth</h2>
+          <p class="des">
+            TrackHub simplifies the shipping process for e-commerce stores. With
+            trusted carrier partnerships and real-time tracking, we handle your
+            logistics so you can focus on growing your business and delighting
+            your customers.
+          </p>
+
+          <a href="#about_section" data-scroll
+            ><button class="btn btn-long btn-red">Know more</button></a
+          >
+        </div>
+        <div class="about_img">
+          <div class="about_boxes flex flex-col">
+            <div class="about_box">
+              <h4>Multi-Carrier Collaboration</h4>
+              <p>
+                Leverage our partnerships with top carriers like DHL, UPS, and
+                Chronopost for global reach and reliability.
+              </p>
+            </div>
+            <div class="about_box">
+              <h4>Seamless Tracking</h4>
+              <p>
+                Keep your customers informed with real-time updates on their
+                parcels’ journeys.
+              </p>
+            </div>
+            <div class="about_box">
+              <h4>Hassle-Free Logistics</h4>
+              <p>
+                Focus on growing your business while we handle the complexities
+                of shipping and delivery.
+              </p>
+            </div>
+            <div class="about_box">
+              <h4>Cost-Effective Solutions</h4>
+              <p>
+                Optimize your shipping costs with our tailored services designed
+                for businesses of all sizes.
+              </p>
+            </div>
+          </div>
+          <!-- <img
+            src="images/Logistics Technology Integration.png"
+            alt=""
+          /> -->
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END About us ----------- -->
+
+    <!-- ------------ Business-offer ----------- -->
+    <section class="business-offer_section" id="about_section">
+      <div class="container flex-c flex-col">
+        <div class="b-offer-head flex-col flex-c">
+          <h2>
+            From Your Store to Their Door Effortlessly - <span>TrackHub</span>
+          </h2>
+          <p>
+            TrackHub makes shipping simple and stress-free for your e-commerce
+            business. From onboarding to delivery, we streamline every step to
+            ensure your customers get their orders without a hitch.
+          </p>
+        </div>
+
+        <div class="b-offer-section flex">
+          <div class="content flex flex-col">
+            <div class="tagline">Step 1</div>
+            <h3>Reach Out and Share Your Needs</h3>
+            <!-- <p>Our team is ready to listen. Tell us your shipping requirements, and we’ll craft a tailored solution, whether your business operates locally or globally.</p> -->
+            <p>
+              Every great partnership starts with a conversation. Let us know
+              your shipping requirements—whether you’re focused on local
+              deliveries or expanding globally, TrackHub will craft a plan
+              tailored to your business goals. Our team is here to simplify your
+              logistics and provide solutions that grow with you.
+            </p>
+            <a href="#contact_section" data-scroll
+              ><button class="btn btn-red btn-long">Get Started</button></a
+            >
+          </div>
+          <div class="img-container">
+            <img
+              src="https://framerusercontent.com/images/O3aJgPSUU5nv1WiCDM3D2CQHXE.png?scale-down-to=512"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="b-offer-section flex">
+          <div class="img-container">
+            <img
+              src="https://framerusercontent.com/images/O3aJgPSUU5nv1WiCDM3D2CQHXE.png?scale-down-to=512"
+              alt=""
+            />
+          </div>
+          <div class="content flex flex-col">
+            <div class="tagline">Step 2</div>
+            <h3>Logistics Made Simple</h3>
+            <!-- <p>Our team is ready to listen. Tell us your shipping requirements, and we’ll craft a tailored solution, whether your business operates locally or globally.</p> -->
+            <p>
+              Leave the heavy lifting to us. From arranging pickups to ensuring
+              secure deliveries, we manage every detail of your shipments.
+              Partnered with top carriers like DHL, UPS, and Chronopost, we
+              ensure timely, safe, and reliable deliveries that meet your
+              customers’ expectations, every single time.
+            </p>
+            <a href="#process_section" data-scroll
+              ><button class="btn btn-red btn-long">
+                Learn About Our Process
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="b-offer-section flex">
+          <div class="content flex flex-col">
+            <div class="tagline">Step 3</div>
+            <h3>Seamless Tracking for Your Customers</h3>
+            <!-- <p>Our team is ready to listen. Tell us your shipping requirements, and we’ll craft a tailored solution, whether your business operates locally or globally.</p> -->
+            <p>
+              Keep your customers in the loop effortlessly. Our platform
+              provides real-time tracking updates at every stage of the shipping
+              process. With TrackHub, your users get transparency and peace of
+              mind, making their shopping experience smooth and trustworthy.
+            </p>
+            <a href="#contact_section" data-scroll
+              ><button class="btn btn-red btn-long">Get Started</button></a
+            >
+          </div>
+          <div class="img-container">
+            <img
+              src="https://framerusercontent.com/images/O3aJgPSUU5nv1WiCDM3D2CQHXE.png?scale-down-to=512"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END Business-offer ----------- -->
+
+    <!-- ------------ Metrics ----------- -->
+    <!-- <section class="metrics-section">
+      <div class="container">
+        <div class="metrics_boxes ">
+          <div class="metrics-box">
+            <span>Over</span>
+            <h3>1M+</h3>
+            <p>parcels shipped globally</p>
+          </div>
+          <div class="metrics-box">
+            <span>Achieving</span>
+            <h3>99%</h3>
+            <p>On-Time Delivery Rate</p>
+          </div>
+          <div class="metrics-box">
+            <span>Up to </span>
+            <h3>20%</h3>
+            <p>Reduction in Shipping Costs</p>
+          </div>
+          <div class="metrics-box">
+            <span>Providing </span>
+            <h3>100%</h3>
+            <p>Real-Time Tracking Accuracy</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ------------ END Metrics ----------- -->
+
+    <!-- ------------ Our Process ----------- -->
+    <section class="process-section" id="process_section">
+      <div class="container flex-c flex-col">
+        <div class="process-head">
+          <h2>TrackHub's Proven Process</h2>
+          <p class="des">
+            Our step-by-step process ensures efficient and reliable shipping for
+            your business. From start to finish, we’ve streamlined logistics to
+            make your operations seamless.
+          </p>
+        </div>
+        <div class="process-boxes">
+          <div class="process-box-container left-container">
+            <div class="dot"></div>
+            <div class="process-box">
+              <div class="div-block-2">
+                <!-- <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_236_1049)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M200 2.62268e-06V60L200 200H140V130.033C139.982 168.678 108.649 200 70 200C31.3401 200 0 168.66 0 130C0 91.3401 31.3401 60 70 60C108.649 60 139.982 91.3222 140 129.967V60H70H0V2.62268e-06L140 0L200 2.62268e-06Z"
+                      fill="url(#paint0_linear_236_1049)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_236_1049"
+                      x1="157.5"
+                      y1="32"
+                      x2="44"
+                      y2="147.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0.0509862" stop-color="#ACAAFF" />
+                      <stop offset="1" stop-color="#C0E8FF" />
+                    </linearGradient>
+                    <clipPath id="clip0_236_1049">
+                      <rect width="200" height="200" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg> -->
+                <svg
+                  fill="none"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 93.842 93.843"
+                  xml:space="preserve"
+                >
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="10"
+                      y1="10"
+                      x2="80"
+                      y2="80"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0%" stop-color="#ACAAFF" />
+                      <stop offset="100%" stop-color="#C0E8FF" />
+                    </linearGradient>
+                  </defs>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M74.042,11.379h-9.582v-0.693c0-1.768-1.438-3.205-3.206-3.205h-6.435V3.205C54.819,1.437,53.381,0,51.614,0H42.23 c-1.768,0-3.206,1.438-3.206,3.205V7.48H32.59c-1.768,0-3.206,1.438-3.206,3.205v0.693h-9.582c-2.393,0-4.339,1.945-4.339,4.34 v73.785c0,2.394,1.946,4.34,4.339,4.34h54.238c2.394,0,4.339-1.946,4.339-4.34V15.719C78.38,13.324,76.434,11.379,74.042,11.379z M32.617,25.336h28.61c1.709,0,3.102-1.391,3.102-3.1v-3.438h7.554l0.021,68.164l-49.939,0.021V18.801h7.554v3.436 C29.517,23.945,30.907,25.336,32.617,25.336z"
+                        fill="url(#paint0_linear)"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3>Tailored Shipping Solutions</h3>
+              <p>
+                We work with you to understand your specific requirements and
+                design a plan that fits your business needs.
+              </p>
+            </div>
+          </div>
+          <div class="process-box-container right-container">
+            <div class="dot"></div>
+
+            <div class="process-box">
+              <div class="div-block-2">
+                <!-- <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_105_351)">
+                    <path
+                      d="M156.064 143.936L112.127 100L156.064 56.0636L200 100L156.064 143.936ZM43.9364 143.936L0 100L43.9364 56.0636L87.8728 100L43.9364 143.936ZM100 200L56.0636 156.064L100 112.127L143.936 156.064L100 200ZM100 87.8728L56.0636 43.9364L100 0L143.936 43.9364L100 87.8728Z"
+                      fill="url(#paint0_linear_105_351)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_105_351"
+                      x1="20.5"
+                      y1="16"
+                      x2="100"
+                      y2="200"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#ACAAFF" />
+                      <stop offset="1" stop-color="#C0E8FF" />
+                    </linearGradient>
+                    <clipPath id="clip0_105_351">
+                      <rect width="200" height="200" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg> -->
+                <svg
+                  fill="none"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 612 612"
+                  xml:space="preserve"
+                >
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="100"
+                      y1="100"
+                      x2="500"
+                      y2="500"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0%" stop-color="#ACAAFF" />
+                      <stop offset="100%" stop-color="#C0E8FF" />
+                    </linearGradient>
+                  </defs>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M226.764,375.35c-28.249,0-51.078,22.91-51.078,51.16c0,28.166,22.829,51.078,51.078,51.078s51.078-22.912,51.078-51.078 C277.841,398.26,255.013,375.35,226.764,375.35z M226.764,452.049c-14.125,0-25.54-11.498-25.54-25.541 c0-14.123,11.415-25.539,25.54-25.539c14.124,0,25.539,11.416,25.539,25.539C252.302,440.551,240.888,452.049,226.764,452.049z M612,337.561v54.541c0,13.605-11.029,24.635-24.636,24.635h-26.36c-4.763-32.684-32.929-57.812-66.927-57.812 c-33.914,0-62.082,25.129-66.845,57.812H293.625c-4.763-32.684-32.93-57.812-66.845-57.812c-33.915,0-62.082,25.129-66.844,57.812 h-33.012c-13.606,0-24.635-11.029-24.635-24.635v-54.541H612L612,337.561z M494.143,375.35c-28.249,0-51.16,22.91-51.16,51.16 c0,28.166,22.912,51.078,51.16,51.078c28.166,0,51.077-22.912,51.077-51.078C545.22,398.26,522.309,375.35,494.143,375.35z M494.143,452.049c-14.125,0-25.539-11.498-25.539-25.541c0-14.123,11.414-25.539,25.539-25.539 c14.042,0,25.539,11.416,25.539,25.539C519.682,440.551,508.185,452.049,494.143,452.049z M602.293,282.637l-96.817-95.751 c-6.159-6.077-14.453-9.526-23.076-9.526h-48.86v-18.313c0-13.631-11.004-24.635-24.635-24.635H126.907 c-13.55,0-24.635,11.005-24.635,24.635v3.86L2.3,174.429l177.146,23.068L0,215.323l178.814,25.423L0,256.25l102.278,19.29 l-0.007,48.403h509.712v-17.985C611.983,297.171,608.452,288.796,602.293,282.637z M560.084,285.839h-93.697 c-2.135,0-3.86-1.724-3.86-3.859v-72.347c0-2.135,1.725-3.86,3.86-3.86h17.82c0.985,0,1.971,0.411,2.71,1.068l75.796,72.347 C565.257,281.569,563.532,285.839,560.084,285.839z"
+                          fill="url(#paint0_linear)"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3>Carrier Selection and Coordination</h3>
+              <p>
+                Leverage our network of trusted carriers to handle all aspects
+                of shipping, ensuring reliability and speed.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-box-container left-container">
+            <div class="dot"></div>
+
+            <div class="process-box">
+              <div class="div-block-2">
+                <!-- <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_231_793)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M50 0H200V50V150L150 200L150 50H0L50 0ZM0 165.067V100L65.067 100L0 165.067ZM100 200H35.7777L100 135.778L100 200Z"
+                      fill="url(#paint0_linear_231_793)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_231_793"
+                      x1="177"
+                      y1="-9.23648e-06"
+                      x2="39.5"
+                      y2="152.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B0B9FF" />
+                      <stop offset="1" stop-color="#E7E9FF" />
+                    </linearGradient>
+                    <clipPath id="clip0_231_793">
+                      <rect width="200" height="200" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg> -->
+                <svg
+                  fill="none"
+                  height="200px"
+                  width="200px"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 485.32 485.32"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 485.32 485.32"
+                >
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="100"
+                      y1="0"
+                      x2="400"
+                      y2="500"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0%" stop-color="#ACAAFF" />
+                      <stop offset="100%" stop-color="#C0E8FF" />
+                    </linearGradient>
+                  </defs>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="m480.76,79.05c-0.6-0.2-235-78.3-235-78.3-2.1-1-4.1-1-6.2,0l-231.9,76.3c-5.8,2.4-7.2,7.4-7.2,10.3v313.3c0,5.2 3.1,9.3 7.2,10.3l229,73.2c3.5,1.3 7.3,1.8 12.1,0l228.9-73.2c4.1-2.1 7.2-6.2 7.2-10.3v-313.3c5.68434e-14-3.1-1-6.2-4.1-8.3zm-238.1-56.7l198.9,63.9-75.1,24.1-196-64.5 72.2-23.5zm-10.3,438l-211.3-67v-291.4l211.3,67.6v290.8zm10.3-310.2l-198.9-62.8 93.7-30.6 195.3,64.5-90.1,28.9zm10.3,310.2v-291.6l105.1-33.3v32.3l20.6-8.8v-30l85.5-27v290.4h0.1l-211.3,68z"
+                        fill="url(#paint0_linear)"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3>Pickup and Packaging Support</h3>
+              <p>
+                From arranging parcel pickup to managing packaging logistics, we
+                handle the details so you don’t have to.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-box-container right-container">
+            <div class="dot"></div>
+
+            <div class="process-box">
+              <div class="div-block-2">
+                <!-- <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M99.9994 153.877C141.147 153.877 176.851 127.54 194.627 111.673C201.789 105.28 201.789 94.597 194.627 88.204C176.851 72.3371 141.147 46 99.9994 46C58.8516 46 23.1479 72.3371 5.37163 88.2041C-1.79055 94.597 -1.79054 105.28 5.37164 111.673C23.1479 127.54 58.8516 153.877 99.9994 153.877ZM99.9994 137.57C120.783 137.57 137.631 120.722 137.631 99.9383C137.631 79.1551 120.783 62.3069 99.9994 62.3069C79.2161 62.3069 62.368 79.1551 62.368 99.9383C62.368 120.722 79.2161 137.57 99.9994 137.57Z"
+                    fill="url(#paint0_linear_105_535)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_105_535"
+                      x1="157.499"
+                      y1="63.2603"
+                      x2="106.827"
+                      y2="158.86"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0.0509862" stop-color="#ACAAFF" />
+                      <stop offset="1" stop-color="#C0E8FF" />
+                    </linearGradient>
+                  </defs>
+                </svg> -->
+                <svg
+                  viewBox="0 0 24 24"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <!-- Gradient Definition -->
+                  <defs>
+                    <linearGradient
+                      id="customGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0%" stop-color="#4B6DAA" />
+                      <stop offset="100%" stop-color="#C0E8FF" />
+                    </linearGradient>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: url(#customGradient);
+                        stroke-miterlimit: 10;
+                        stroke-width: 1.91px;
+                      }
+                      .cls-2 {
+                        fill: url(#customGradient);
+                      }
+                    </style>
+                  </defs>
+
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <!-- Outer circle with gradient stroke -->
+                    <path
+                      class="cls-1"
+                      d="M9.14,5.08c0,2.39-3.82,6-3.82,6S1.5,7.47,1.5,5.08A3.7,3.7,0,0,1,5.32,1.5,3.7,3.7,0,0,1,9.14,5.08Z"
+                    ></path>
+
+                    <!-- Inner dot with gradient fill -->
+                    <circle class="cls-2" cx="5.32" cy="5.32" r="0.95"></circle>
+
+                    <!-- Second outer shape with gradient stroke -->
+                    <path
+                      class="cls-1"
+                      d="M22.5,14.62c0,2.39-3.82,6-3.82,6s-3.82-3.58-3.82-6a3.7,3.7,0,0,1,3.82-3.57A3.7,3.7,0,0,1,22.5,14.62Z"
+                    ></path>
+
+                    <!-- Inner dot with gradient fill -->
+                    <circle
+                      class="cls-2"
+                      cx="18.68"
+                      cy="14.86"
+                      r="0.95"
+                    ></circle>
+
+                    <!-- Connecting path with gradient stroke -->
+                    <path
+                      class="cls-1"
+                      d="M4.36,13h4.3a2.39,2.39,0,0,1,2.39,2.39h0a2.39,2.39,0,0,1-2.39,2.39H3.89A2.39,2.39,0,0,0,1.5,20.11h0A2.39,2.39,0,0,0,3.89,22.5H19.64"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h3>Real-Time Tracking Integration</h3>
+              <p>
+                Your shipments are tracked every step of the way, with real-time
+                updates accessible to both you and your customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-box-container left-container">
+            <div class="dot"></div>
+            <div class="process-box">
+              <div class="div-block-2">
+                <!-- <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_104_26)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                      fill="url(#paint0_linear_104_26)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_104_26"
+                      x1="20.5"
+                      y1="16"
+                      x2="100"
+                      y2="200"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#ACAAFF" />
+                      <stop offset="1" stop-color="#C0E8FF" />
+                    </linearGradient>
+                    <clipPath id="clip0_104_26">
+                      <rect width="200" height="200" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg> -->
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Gradient Definition -->
+                  <defs>
+                    <linearGradient
+                      id="customGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0%" stop-color="#4B6DAA" />
+                      <stop offset="100%" stop-color="#C0E8FF" />
+                    </linearGradient>
+                  </defs>
+
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <!-- Apply the gradient to the stroke -->
+                    <path
+                      d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20"
+                      stroke="url(#customGradient)"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h3>Customer Satisfaction Focus</h3>
+              <p>
+                We prioritize secure, on-time deliveries to keep your customers
+                happy and coming back for more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="metrics_boxes">
+          <div class="metrics-box">
+            <span>Over</span>
+            <h3>1M+</h3>
+            <p>parcels shipped globally</p>
+          </div>
+          <div class="metrics-box">
+            <span>Achieving</span>
+            <h3>99%</h3>
+            <p>On-Time Delivery Rate</p>
+          </div>
+          <div class="metrics-box">
+            <span>Up to </span>
+            <h3>20%</h3>
+            <p>Reduction in Shipping Costs</p>
+          </div>
+          <div class="metrics-box">
+            <span>Providing </span>
+            <h3>100%</h3>
+            <p>Real-Time Tracking Accuracy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END Our Process ----------- -->
+
+    <!-- ------------ HEADER ----------- -->
+
+    <!-- <section>
+      <div class="container">
+        <div class="b-offer-section flex">
+          <div class="content flex flex-col">
+            <div class="tagline">Step 1</div>
+            <h3>Reach Out and Share Your Needs</h3>
+            <p>
+              Every great partnership starts with a conversation. Let us know
+              your shipping requirements—whether you’re focused on local
+              deliveries or expanding globally, TrackHub will craft a plan
+              tailored to your business goals. Our team is here to simplify your
+              logistics and provide solutions that grow with you.
+            </p>
+            <a href="#"
+              ><button class="btn btn-red btn-long">Get Started</button></a
+            >
+          </div>
+          <div class="img-container">
+            <img
+              src="https://framerusercontent.com/images/O3aJgPSUU5nv1WiCDM3D2CQHXE.png?scale-down-to=512"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+     </section> -->
+    <!-- ------------ END HEADER ----------- -->
+
+    <!-- ------------ FAQS ----------- -->
+    <section class="faqs-section" id="faqs_section">
+      <div class="container flex-col flex-c">
+        <div class="faqs-head flex-col flex-c">
+          <div class="tagline">TrackHub FAQS</div>
+          <h2>We're here to answer all your questions.</h2>
+          <p>
+            Whether you’re new to TrackHub or already on board, we’ve got the
+            answers you need. Explore our FAQs to learn how we make shipping
+            seamless for your business.
+          </p>
+        </div>
+
+        <div class="faqs-container">
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>What is TrackHub?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                TrackHub is a logistics platform that partners with top carriers
+                to handle shipping for e-commerce businesses, offering real-time
+                tracking and reliable delivery solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>How does TrackHub handle shipping?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Once you provide your shipping requirements, we coordinate with
+                our trusted carriers to pick up, deliver, and track parcels
+                securely and efficiently.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>Can I track my shipments in real-time?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Yes! Our platform provides live updates, so you and your
+                customers can track orders at every stage of the shipping
+                process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>Which carriers does TrackHub work with?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                We collaborate with leading carriers such as DHL, UPS,
+                Chronopost, and many others to ensure fast and reliable
+                shipping.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>How can I start shipping with TrackHub?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Contact our team, share your requirements, and we’ll create a
+                customized plan to get you started quickly.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="accordion-header">
+              <h3>What if my customers need to return an item?</h3>
+              <div class="accordian-icon">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                TrackHub offers return management services to simplify the
+                process for both you and your customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END FAQS ----------- -->
+
+    <!-- ------------ CTA ----------- -->
+    <section class="cta-section" id="contact_section">
+      <div class="container">
+        <h2>Ready to Simplify Your Shipping?</h2>
+        <p>
+          Join hundreds of e-commerce businesses already using TrackHub to
+          deliver better, faster, and smarter. Let us handle the logistics so
+          you can focus on growth.
+        </p>
+        <div class="contact-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+
+          <a href="#"
+            ><button class="btn-email btn btn-red">Join Today</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ------------ END CTA ----------- -->
+
+    <!-- ------------ FOOTER ----------- -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="f-top-right">
+            <div class="logo flex">
+              <img src="images/logo-abstract.png" alt="TrackHub logo" />
+              <span>TrackHub</span>
+            </div>
+            <p>
+              TrackHub – Simplifying shipping for e-commerce businesses with
+              trusted carriers and seamless logistics.
+            </p>
+          </div>
+          <div class="f-top-left flex">
+            <div class="left">
+              <ul class="flex-col">
+                  <li><a href="#partners_section" data-scroll>Partners</a></li>
+                <li><a href="#about_section" data-scroll>About Us</a></li>
+                <li><a href="#process_section" data-scroll>Our Process</a></li>
+                <li><a href="#faqs_section" data-scroll>FAQS</a></li>
+                <li><a href="#contact_section" data-scroll>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="">support@trackhub.com</a></li>
+                <li><a href="">+1 (123) 456-7890</a></li>
+                <li>
+                  58 Rue de Monceau, <br />
+                  75008
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <p>© 2024 TrackHub. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Legal Policy</a>
+            <!-- <a href="#">Privacy Policy</a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------ END FOOTER ----------- -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
