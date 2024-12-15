@@ -1060,6 +1060,37 @@ text-decoration: underline;
 /* ------------END Footer ----------- */
 
 
+/* ------------Legal Page ----------- */
+.legal-section{
+  padding: 120px 0 80px 0;
+}
+.legal-head{
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: left !important;
+}
+.legal-container h3{
+  font-size: 25px;
+}
+
+.legal-container{
+  margin-bottom: 3rem;
+}
+.legal-container .box{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.legal-container .des{
+  margin-top: .5rem;
+}
+
+/* ------------END Legal Page ----------- */
+
+
+
 /* ------------ Responsive ----------- */
 
 
