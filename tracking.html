@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Your orders</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tracking.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/images/logo-abstract.png"
+      type="image/x-icon"
+    />
+    <!-- remixicon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="nav_container flex">
+          <div class="logo flex">
+            <img src="images/logo-abstract.png" alt="TrackHub logo" />
+            <span>TrackHub</span>
+          </div>
+          <div class="nav_links flex">
+            <ul class="nav_list flex">
+              <!-- <li><a href="#" data-scroll>Home</a></li> -->
+              <li><a href="index.html#partners_section">Partners</a></li>
+              <li><a href="index.html#about_section">About Us</a></li>
+              <li><a href="index.html#process_section">Our Process</a></li>
+              <li><a href="index.html#faqs_section">FAQS</a></li>
+              <li><a href="index.html#contact_section">Contact Us</a></li>
+            </ul>
+            <a href="#"
+              ><button class="btn btn-red">Track Your Order</button></a
+            >
+          </div>
+        </div>
+
+        <div class="hamburger-menu">
+          <i class="ri-menu-fill" id="menu-icon"></i>
+          <div class="logo flex">
+            <img src="images/logo-abstract.png" alt="TrackHub logo" />
+            <span>TrackHub</span>
+          </div>
+          <a href="#"><button class="btn btn-red">Track Order</button></a>
+        </div>
+        <!-- Submenu -->
+        <div class="submenu">
+          <ul class="nav_list flex">
+            <!-- <li><a href="#" data-scroll>Home</a></li> -->
+            <li><a href="index.html#partners_section">Partners</a></li>
+            <li><a href="index.html#about_section">About Us</a></li>
+            <li><a href="index.html#process_section">Our Process</a></li>
+            <li><a href="index.html#faqs_section">FAQS</a></li>
+            <li><a href="index.html#contact_section">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------ Tracking ----------- -->
+<main>
+
+
+<section class="tracking-form tracking-header">
+  <div class="container">
+    <h2>Enter Tracking Number</h2>
+    <input type="text" id="trackingNumber" placeholder="Enter tracking number" />
+    <button id="submitTracking">Track Order</button>
+    <p id="errorMessage" style="color: red; display: none;"></p>
+    <div id="loader" style="display: none;">Loading...</div>
+  </div>
+</section>
+    <!-- ------------ END Tracking ----------- -->
+
+    <!-- ------------ Tracking timeline ----------- -->
+   
+
+
+<section class="timeline-section" id="orderDetails" style="display: none;">
+  <div class="container">
+    <div class="timeline-details">
+      <h2>Your Order details</h2>
+      <p>
+        Tracking Number: <span class="tracking-number"></span>
+      </p>
+      <div class="latest-status">
+        <div class="status-icon">
+          <img src="./images/parcel.png" alt="" />
+        </div>
+        <div class="timeline-box">
+          <div class="status-date"></div>
+          <h4 class="status-title"></h4>
+          <p class="status-description"></p>
+        </div>
+      </div>
+      <div class="shipping-info">
+        <h4>Shipping Address</h4>
+        <p class="name"></p>
+        <p class="address"></p>
+      </div>
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-boxes"></div>
+    </div>
+  </div>
+</section>
+    <!-- ------------ END Tracking ----------- -->
+
+</main>
+
+    <!-- ------------ FOOTER ----------- -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="f-top-right">
+            <div class="logo flex">
+              <img src="images/logo-abstract.png" alt="TrackHub logo" />
+              <span>TrackHub</span>
+            </div>
+            <p>
+              TrackHub – Simplifying shipping for e-commerce businesses with
+              trusted carriers and seamless logistics.
+            </p>
+          </div>
+          <div class="f-top-left flex">
+            <div class="left">
+              <ul class="flex-col">
+                <li><a href="index.html#partners_section">Partners</a></li>
+                <li><a href="index.html#about_section">About Us</a></li>
+                <li><a href="index.html#process_section">Our Process</a></li>
+                <li><a href="index.html#faqs_section">FAQS</a></li>
+                <li><a href="index.html#contact_section">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="">support@trackhub.com</a></li>
+                <li><a href="">+1 (123) 456-7890</a></li>
+                <li>
+                  58 Rue de Monceau, <br />
+                  75008
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <p>© 2024 TrackHub. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="legal-information.html">Legal Policy</a>
+            <!-- <a href="#">Privacy Policy</a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------ END FOOTER ----------- -->
+    <script src="script.js"></script>
+    <script src="tracking.js"></script>
+  </body>
+</html>
