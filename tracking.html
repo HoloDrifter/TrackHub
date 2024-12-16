@@ -20,6 +20,8 @@
     />
   </head>
   <body>
+    <div id="loader">Loading...</div>
+
     <div class="navbar">
       <div class="container">
         <div class="nav_container flex">
@@ -70,11 +72,16 @@
 
 <section class="tracking-form tracking-header">
   <div class="container">
-    <h2>Enter Tracking Number</h2>
-    <input type="text" id="trackingNumber" placeholder="Enter tracking number" />
-    <button id="submitTracking">Track Order</button>
-    <p id="errorMessage" style="color: red; display: none;"></p>
-    <div id="loader" style="display: none;">Loading...</div>
+    <div class="hero-content">
+      <h1>Track Your Order Anytime, Anywhere</h1>
+      <p>Enter your tracking number below to get real-time updates on your shipment’s journey. From pickup to delivery, stay informed every step of the way.</p>
+    </div>
+    <div class="input_box">
+      <label for="trackingNumber">Enter your tracking number</label>
+      <input type="text" id="trackingNumber" placeholder="eg.3EB3E33DBA" />
+      <button id="submitTracking" class="btn btn-red ">Track Order</button>
+    </div>
+    <p id="errorMessage" ></p>
   </div>
 </section>
     <!-- ------------ END Tracking ----------- -->
@@ -85,6 +92,7 @@
 
 <section class="timeline-section" id="orderDetails" style="display: none;">
   <div class="container">
+    <button class="back-btn ">Back</button>
     <div class="timeline-details">
       <h2>Your Order details</h2>
       <p>
