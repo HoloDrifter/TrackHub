@@ -109,3 +109,24 @@ scrollLinks.forEach((link) => {
     smoothScroll(target);
   });
 });
+
+
+
+
+// tracking
+
+document.getElementById("track-btn").addEventListener("click", function () {
+  const trackingNumber = document.getElementById("tracking_no").value.trim();
+
+  // Check if a tracking number is entered
+  if (!trackingNumber) {
+    // Display error message in the p tag
+    const errorMessage = document.querySelector(".errorMessage");
+    errorMessage.textContent = "Please enter a tracking number!"; // Set the error message text
+    errorMessage.style.display = "block"; // Make the error message visible
+    return;
+  }
+
+  // Redirect to the tracking page with the tracking number as a query parameter
+  window.location.href = `tracking.html?trackingNumber=${trackingNumber}`;
+});

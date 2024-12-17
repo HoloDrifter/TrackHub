@@ -1,6 +1,7 @@
 main{
-  /* min-height: 80vh; */
+
   margin-top: 80px;
+  /* min-height: 70vh; */
   /* border: 2px solid red; */
 }
 .back-btn{
@@ -15,10 +16,21 @@ main{
     box-shadow: inset 0 0 #0000001a, 0 1px 1px #0000001a;
     position: absolute;
     top: -40px;
+    left: 0;
 }
 .tracking-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
     height: auto;
-    padding: 40px 0;
+  min-height: 70vh;
+
+    padding: 110px 0;
+  }
+  @media (min-width:2300px){
+    main{
+      height: 80vh;
+    }
   }
   .tracking-header .container{
     height: 100%;
@@ -85,10 +97,11 @@ position: relative;
   border: 2px solid;
   padding: 20px;
     border: 1px solid #e4e6e6;
-    /* background-color: #14161c; */
     color: #000;
     /* border: 1px solid #494949; */
     border-radius: var(--border-radius);
+    position: sticky;
+    top: 100px;
 }
 .shipping-info .name{
   margin: .6rem 0 .2rem 0;
@@ -285,5 +298,107 @@ align-items: center;
   }
   .timeline-box .status-date{
     font-size: 13px;
+  }
+}
+
+/* loader css */
+.loader {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.truckWrapper {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+/* truck upper body */
+.truckBody {
+  width: 130px;
+  height: fit-content;
+  margin-bottom: 6px;
+  animation: motion 1s linear infinite;
+}
+/* truck suspension animation*/
+@keyframes motion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* truck's tires */
+.truckTires {
+  width: 130px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: absolute;
+  bottom: 0;
+}
+.truckTires svg {
+  width: 24px;
+}
+
+.road {
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+.road::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 10px solid white;
+}
+.road::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 4px solid white;
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 90px;
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+@keyframes roadAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-350px);
   }
 }
