@@ -93,6 +93,7 @@ a {
   bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 /* End Of general style */
 
@@ -1233,6 +1234,10 @@ footer::before {
   }
   .cta-section p {
     font-size: 18px;
+  }
+  .errorMessage{
+    font-size: 12px !important;
+    text-align: center;
   }
 }
 
