@@ -186,13 +186,11 @@ header {
 /* Basic styling for submenu */
 .submenu {
   height: 90vh;
-  /* display: none; */
   position: absolute;
-  top: 100%; /* Start hidden above the viewport */
+  top: 100%; 
   left: 0;
   width: 100%;
   background: #fff;
-  /* background: red; */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: -1 !important;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -206,14 +204,9 @@ header {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-
-  /* gap: 5px; */
+}.submenu ul li{
+  width: 100%;
 }
-
-.submenu ul li {
-  /* margin: 10px 0; */
-}
-
 .submenu ul li a {
   padding: 1.4rem 10px;
   display: inline-block;
@@ -224,6 +217,7 @@ header {
   font-weight: 500;
   border: 1px solid transparent;
   border-bottom: 1px solid #2020201a;
+  border-radius: 0px;
 }
 .submenu ul li a:hover {
   border-radius: 12px;
@@ -231,10 +225,7 @@ header {
   border-color: #2020201a;
 }
 
-/* When submenu is active */
 .submenu.active {
-  /* display: block; */
-
   transform: translateY(0);
   opacity: 1;
 }
@@ -244,20 +235,13 @@ header {
   margin-top: 5rem;
   height: 100%;
   width: 100%;
-  /* border: 2px solid ; */
-  /* height: 88vh; */
-  /* background-image: url(./670feec3e170f6e2e7957d22_Features_BG-p-2000.jpg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
 }
 .hero .container {
   padding: 60px 0;
-  /* border: 2px solid ; */
 }
 .hero_content {
   width: 55%;
   padding: 80px 0;
-  /* border: 2px solid red; */
   align-items: flex-start;
   justify-content: left;
 }
@@ -291,7 +275,6 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  /* background-color: #2d4fb7; */
   padding: 0 0 10px 0;
 }
 .track-head p {
@@ -299,7 +282,6 @@ header {
   padding: 6px 0;
   display: inline-block;
   text-align: center;
-  /* border-bottom: 3px solid var(--clr-primary); */
 }
 .track-body {
   padding: 30px 0;
@@ -337,16 +319,8 @@ header {
     0 10px 6.000000000000001px -4px #0000002e;
   display: flex;
   border: 1px solid #d4d5d6;
-  /* flex: none; */
-  /* flex-direction: row; */
-  /* flex-wrap: nowrap; */
-  /* gap: 10px; */
-  /* height: min-content; */
   justify-content: center;
-  /* overflow: hidden; */
   padding: 1rem;
-  /* position: relative; */
-  /* width: min-content; */
   margin-bottom: 1rem;
 }
 .track_icon i {
@@ -360,7 +334,6 @@ header {
 }
 .track-body input {
   margin-top: 0.5rem;
-  /* border: ; */
   outline: none;
   padding: 0.9rem 1rem;
   width: 100%;

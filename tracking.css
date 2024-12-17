@@ -1,47 +1,44 @@
-main{
-
+main {
   margin-top: 80px;
-  /* min-height: 70vh; */
-  /* border: 2px solid red; */
 }
-.back-btn{
+.back-btn {
   margin-bottom: 15px;
-    padding: 7px 12px;
-    border-radius: 12px;
-    color: #20202099;
-    background-color: #ededed;
-    border: 1px solid #2020201a;
-    font-size: 0.875rem;
-    font-weight: 600;
-    box-shadow: inset 0 0 #0000001a, 0 1px 1px #0000001a;
-    position: absolute;
-    top: -40px;
-    left: 0;
+  padding: 7px 12px;
+  border-radius: 12px;
+  color: #20202099;
+  background-color: #ededed;
+  border: 1px solid #2020201a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: inset 0 0 #0000001a, 0 1px 1px #0000001a;
+  position: absolute;
+  top: -40px;
+  left: 0;
 }
-.tracking-header{
+.tracking-header {
   display: flex;
   align-items: center;
   justify-content: center;
-    height: auto;
+  height: auto;
   min-height: 70vh;
 
-    padding: 110px 0;
-  }
-  @media (min-width:2300px){
-    main{
-      height: 80vh;
-    }
-  }
-  .tracking-header .container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 110px 0;
 }
-#errorMessage{
+@media (min-width: 2300px) {
+  main {
+    height: 80vh;
+  }
+}
+.tracking-header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#errorMessage {
   display: none;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: var(--border-radius);
   color: var(--clr-white);
   background-color: #fce4e4;
@@ -50,105 +47,98 @@ main{
   margin-top: 1.2rem;
   font-size: 14px;
 }
-.tracking-header .hero-content{
+.tracking-header .hero-content {
   width: 60%;
   margin-bottom: 1rem;
   text-align: center;
 }
-.tracking-header h1{
+.tracking-header h1 {
   font-size: 60px;
-    line-height: 1.2;
+  line-height: 1.2;
 }
 .hero-content p {
-      margin: 12px 0 25px 0;
-    font-size: 18px;
-    font-weight: 500;
-} 
-.input_box{
+  margin: 12px 0 25px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.input_box {
   max-width: 400px;
   width: 95%;
   display: flex;
   flex-direction: column;
 }
-.input_box input{
-     margin-top: .5rem;
-    outline: none;
-    padding: 0.9rem 1rem;
-    width: 100%;
-    border-radius: var(--border-radius);
-    border-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: .5rem;
+.input_box input {
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.9rem 1rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
 }
-.timeline-section{
-padding: 100px 0;
-/* background-color: #d9d9d9; */
-
+.timeline-section {
+  padding: 100px 0;
 }
-.timeline-section .container{
+.timeline-section .container {
   display: flex;
-align-items: flex-start;
-justify-content: space-between;
-gap: 50px;
-position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
 }
-.timeline-details{
+.timeline-details {
   width: 35%;
   height: auto;
   border: 2px solid;
   padding: 20px;
-    border: 1px solid #e4e6e6;
-    color: #000;
-    /* border: 1px solid #494949; */
-    border-radius: var(--border-radius);
-    position: sticky;
-    top: 100px;
+  border: 1px solid #e4e6e6;
+  color: #000;
+  border-radius: var(--border-radius);
+  position: sticky;
+  top: 100px;
 }
-.shipping-info .name{
-  margin: .6rem 0 .2rem 0;
+.shipping-info .name {
+  margin: 0.6rem 0 0.2rem 0;
   font-size: 16px;
   font-weight: 500;
 }
-.timeline-details h2{
-
+.timeline-details h2 {
 }
-.latest-status{
-      display: flex
-;
-align-items: center;
-    gap: 10px;
-    margin-top: 2rem;
-    padding: 12px;
-    border-radius: 12px;
-    background: #f5f5f5;
-    border: 1px solid #cdcdcd;
+.latest-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f5f5f5;
+  border: 1px solid #cdcdcd;
 }
-.latest-status .timeline-box{
+.latest-status .timeline-box {
   width: 70%;
 }
-.status-icon{
+.status-icon {
   border: 2px solid #000;
-    width: 80px;
-    height: 80px;
-    padding: 15px;
-    border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 40px;
 }
-.status-icon img{
+.status-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.shipping-info{
+.shipping-info {
   margin-top: 1.5rem;
 }
-.timeline-content{
+.timeline-content {
   width: 55%;
   padding: 40px 40px;
   border-radius: var(--border-radius);
-  /* background: #e4e6e6; */
-    background-color: #f5f5f5;
-    border: 1px solid #2020201a;
-    box-shadow: inset 0 0 #0000001a, 0 1px 1px #0000001a;
-  
+  background-color: #f5f5f5;
+  border: 1px solid #2020201a;
+  box-shadow: inset 0 0 #0000001a, 0 1px 1px #0000001a;
 }
 .timeline-boxes {
   width: 100%;
@@ -185,7 +175,6 @@ align-items: center;
   z-index: 10;
   top: 0;
   transform: translateX(-50%);
-  /* box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1); */
 }
 .timeline-box {
   padding: 0px 10px;
@@ -195,18 +184,17 @@ align-items: center;
   border: 1px solid #494949;
   border: none;
 }
-.timeline-box .status-date{
-    font-size: 14px;
+.timeline-box .status-date {
+  font-size: 14px;
 }
-.timeline-box .status-title{
-    font-size: 20px;
-    margin: 5px 0 7px 0;
+.timeline-box .status-title {
+  font-size: 20px;
+  margin: 5px 0 7px 0;
 }
-.timeline-box .status-description{
-    font-size: 18px;
-    opacity: .6;
+.timeline-box .status-description {
+  font-size: 18px;
+  opacity: 0.6;
 }
-
 
 /* Loader styles */
 #loader {
@@ -227,77 +215,98 @@ align-items: center;
   display: none;
 }
 
-@media (max-width:1275px) {
-  .timeline-details{
+@media (max-width: 1275px) {
+  .timeline-details {
     width: 40%;
   }
-  .timeline-container{
+  .timeline-container {
     width: 85%;
   }
 }
 
-@media (max-width:1100px) {
-  .timeline-section .container{
+@media (max-width: 1100px) {
+  .timeline-section .container {
     flex-direction: column;
   }
-  .timeline-details,.timeline-content{
+  .timeline-details,
+  .timeline-content {
     width: 100%;
+  }
+  .timeline-details {
+    position: relative;
+    top: 0;
   }
 }
 
-@media (max-width:1200px) {
-  .tracking-header h1{
+@media (max-width: 1200px) {
+  .tracking-header h1 {
     font-size: 50px;
   }
 }
 
- @media (max-width: 992px) {
-    .tracking-header .hero-content{
-      width: 75%;
-    }
-    
+@media (max-width: 992px) {
+  .tracking-header .hero-content {
+    width: 75%;
   }
-  @media (max-width: 768px) {
-    .tracking-header .hero-content{
-      width: 85%;
-    }
-    .input_box{
-      max-width: 90%;
-    }
-    .timeline-container{
-      width: 100%;
-    }
-  }
-  @media (max-width: 576px) {
-    .tracking-header h1 {
-        font-size: 35px;
-    }
-        .tracking-header .hero-content{
-      width: 100%;
-    }
-    .input_box{
-      max-width: 100%;
-    }
-    .hero-content p{
-      font-size: 16px;
-    }
 }
-
-@media (max-width:500px) {
-  .timeline-container{
-    padding: 0 25px;
+@media (max-width: 768px) {
+  .tracking-header .hero-content {
+    width: 85%;
   }
-  .timeline-content{
-    padding: 30px;
+  .input_box {
+    max-width: 90%;
   }
-  .timeline-box .status-title{
-    font-size: 18px;
+  .timeline-container {
+    width: 100%;
   }
-  .timeline-box .status-description{
+}
+@media (max-width: 576px) {
+  .tracking-header h1 {
+    font-size: 35px;
+  }
+  .tracking-header .hero-content {
+    width: 100%;
+  }
+  .input_box {
+    max-width: 100%;
+  }
+  .hero-content p {
     font-size: 16px;
   }
-  .timeline-box .status-date{
+}
+
+@media (max-width: 500px) {
+  .timeline-container {
+    padding: 0 25px;
+  }
+  .timeline-content {
+    padding: 30px;
+  }
+  .timeline-box .status-title {
+    font-size: 18px;
+  }
+  .timeline-box .status-description {
+    font-size: 16px;
+  }
+  .timeline-box .status-date {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  .status-icon {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+}
+@media (max-width: 325px) {
+  .latest-status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .latest-status .timeline-box {
+    width: 100%;
   }
 }
 

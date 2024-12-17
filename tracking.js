@@ -11,8 +11,8 @@ function getUrlParameter(name) {
 
 // Function to load order details from localStorage
 function loadOrderDetailsFromLocalStorage() {
-  const orderData = localStorage.getItem('orderData');
-  
+  const orderData = localStorage.getItem("orderData");
+
   if (orderData) {
     const data = JSON.parse(orderData);
     populateOrderDetails(data);
@@ -24,8 +24,12 @@ function loadOrderDetailsFromLocalStorage() {
 // Function to populate the order details section
 function populateOrderDetails(data) {
   document.querySelector(".tracking-number").textContent = data.trackingNumber;
-  document.querySelector(".name").textContent = `${data.user.firstName} ${data.user.lastName}`;
-  document.querySelector(".address").innerHTML = `${data.shipping.address}, <br />${data.shipping.city}, ${data.shipping.country}, ${data.shipping.zip}`;
+  document.querySelector(
+    ".name"
+  ).textContent = `${data.user.firstName} ${data.user.lastName}`;
+  document.querySelector(
+    ".address"
+  ).innerHTML = `${data.shipping.address}, <br />${data.shipping.city}, ${data.shipping.country}, ${data.shipping.zip}`;
 
   const timelineBoxesContainer = document.querySelector(".timeline-boxes");
 
@@ -38,9 +42,21 @@ function populateOrderDetails(data) {
   // Show the latest status in the "latest-status" div
   const latestStatus = reversedStatusHistory[0];
   const latestStatusDate = new Date(latestStatus.timestamp);
-  document.querySelector(".latest-status .status-date").textContent = `${latestStatusDate.toLocaleDateString()} | ${latestStatusDate.toLocaleTimeString()}`;
-  document.querySelector(".latest-status .status-title").textContent = latestStatus.status;
-  document.querySelector(".latest-status .status-description").textContent = latestStatus.desc;
+  document.querySelector(
+    ".latest-status .status-date"
+  ).textContent = `${latestStatusDate.toLocaleDateString()} | ${latestStatusDate.toLocaleTimeString()}`;
+  document.querySelector(".latest-status .status-title").textContent =
+    latestStatus.status;
+  document.querySelector(".latest-status .status-description").textContent =
+    latestStatus.desc;
+
+  // Check if the order is "Successfully delivered" and change the image accordingly
+  const statusIcon = document.querySelector(".status-icon img");
+  if (latestStatus.status === "Successfully delivered") {
+    statusIcon.src = "./images/parcel.png"; // Set to parcel image
+  } else {
+    statusIcon.src = "./images/in-transit.png"; // Set to in-transit image
+  }
 
   // Loop through the reversed status history and create timeline boxes
   reversedStatusHistory.forEach((status) => {
@@ -94,8 +110,8 @@ window.addEventListener("load", () => {
 
 // Handle the "Back" button click
 document.querySelector(".back-btn").addEventListener("click", () => {
-  localStorage.removeItem("orderData");  // Clear stored order data
-  window.history.back();  // Go back to the previous page
+  localStorage.removeItem("orderData"); // Clear stored order data
+  window.history.back(); // Go back to the previous page
 });
 
 document
@@ -160,8 +176,3 @@ async function fetchOrderDetails(trackingNumber) {
     trackingForm.style.display = "block";
   }
 }
-
-
-
-
-// 2) i want is whenever some comes from the home page or through direct link the api is called then when the user got the order details i want to reset the params what i mean is lets take an example if someone comes with direct link with id 5681 then the api will automatically get called 
